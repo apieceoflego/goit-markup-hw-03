@@ -19,37 +19,34 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <a lang="en" href="./index.html" class="logo"
-          ><span class="logo-body logo">Web</span>Studio</a
-        >
+      <div class="container main-nav">
+        <a lang="en" href="./index.html" class="logo"><span class="logo-body">Web</span>Studio</a>
         <nav>
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="site-nav-item"><a href="./index.html" class="link current">Студия</a></li>
+            <li class="site-nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="site-nav-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
 
-        <div>
-          <ul class="contact-nav list">
-            <li>
-              <a lang="en" href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-            </li>
-            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-          </ul>
-        </div>
+        <ul class="contact-nav list">
+          <li class="contact-nav-item">
+            <a lang="en" href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li class="contact-nav-item">
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
 
     <main>
-      <!-- div для будущего оформления банера -->
-      <div class="hat">
-        <section class="hero">
+      <section class="hero">
+        <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="btn">Заказать услугу</button>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <section class="section-feature">
         <div class="container">
@@ -88,13 +85,13 @@
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="list">
             <li>
-              <img src="./images/desk.jpg" alt="рабочий стол" width="370" />
+              <img class="work-img" src="./images/desk.jpg" alt="рабочий стол" width="370" />
             </li>
             <li>
-              <img src="./images/notebook.jpg" alt="ноутбук" width="370" />
+              <img class="work-img" src="./images/notebook.jpg" alt="ноутбук" width="370" />
             </li>
             <li>
-              <img src="./images/ipad.jpg" alt="планшет" width="370" />
+              <img class="work-img" src="./images/ipad.jpg" alt="планшет" width="370" />
             </li>
           </ul>
         </div>
