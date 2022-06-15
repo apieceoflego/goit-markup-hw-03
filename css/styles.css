@@ -291,7 +291,7 @@ body {
 
 .portfolio-border {
   border: 1px solid var(--portfolio-border-color);
-  border-top: 0;
+  border-top: none;
 }
 
 .portfolio-title {
