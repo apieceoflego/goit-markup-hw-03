@@ -7,6 +7,7 @@
   --text-color: #757575;
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --button-bgr-color: #188ce8;
+  --portfolio-border-color: #eeeeee;
 }
 
 body {
@@ -18,8 +19,10 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .list {
@@ -276,15 +279,19 @@ body {
   gap: 30px;
 }
 
-.portfolio-list{
+.portfolio-list {
   flex-basis: calc((100% - 60px) / 3);
-
 }
 
 .portfolio-foto {
   display: block;
-  margin-bottom: 20px;
+
   margin-right: 0;
+}
+
+.portfolio-border {
+  border: 1px solid var(--portfolio-border-color);
+  border-top: 0;
 }
 
 .portfolio-title {
@@ -294,7 +301,8 @@ body {
   line-height: 2;
   margin-top: 0px;
   margin-bottom: 4px;
-  margin-left: 24px;  
+  margin-left: 24px;
+  padding-top: 20px;
 }
 
 .portfolio-text {
@@ -330,11 +338,16 @@ body {
   justify-content: center;
 }
 
+.button-nav .btn-list + .btn-list{
+  margin-left: 8px;
+}
+
+
 .btn-portfolio {
   padding: 6px 22px;
   border: 0px;
   border-radius: 4px;
-  margin-right: 8px;
+  
 
   color: var(--tittle-color);
   background-color: var(--team-bgr-color);
@@ -346,9 +359,7 @@ body {
   text-align: center;
 }
 
-.button-nav:not(:last-child) {
-  margin-right: 8px;
-}
+
 
 .button-nav .btn-portfolio:hover,
 .button-nav .btn-portfolio:focus {
