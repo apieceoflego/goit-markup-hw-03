@@ -115,6 +115,8 @@ body {
 .hero {
   text-align: center;
   background-color: var(--footer-bgr-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
