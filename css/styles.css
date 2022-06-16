@@ -8,6 +8,7 @@
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --button-bgr-color: #188ce8;
   --portfolio-border-color: #eeeeee;
+  --header-border-color: #ececec;
 }
 
 body {
@@ -36,7 +37,16 @@ body {
   padding-bottom: 94px;
 }
 
+.half {
+  padding-top: 0;
+}
+
 /* header */
+
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -65,9 +75,10 @@ body {
   margin-right: 50px;
 }
 
-.site-nav-item {
+.link-nav {
+  display: block;
   padding-top: 34px;
-  padding-bottom: 34px;
+  padding-bottom: 33px;
 }
 
 .site-nav .link {
@@ -90,6 +101,11 @@ body {
 .contact-nav {
   display: flex;
   margin-left: auto;
+}
+
+.link-cont {
+  padding-top: 34px;
+  padding-bottom: 33px;
 }
 
 .contact-nav-item:not(:last-child) {
@@ -202,7 +218,6 @@ body {
 .team-foto {
   display: block;
   margin-top: 0px;
-  margin-bottom: 30px;
 }
 
 .team-box {
@@ -210,9 +225,13 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .section-team-title {
   margin-top: 0;
-  margin-bottom: 10px;
 
   color: var(--tittle-color);
   font-family: 'Roboto';
@@ -226,7 +245,6 @@ body {
 .team-text {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 30px;
 
   font-size: 16px;
   line-height: 1.2;
@@ -256,7 +274,6 @@ body {
   line-height: 1.7;
   font-style: normal;
   display: inline-block;
-  margin-bottom: 20px;
 }
 
 .footer-contact {
@@ -265,7 +282,14 @@ body {
   line-height: 1.7;
   font-style: normal;
   display: inline-block;
-  margin-bottom: 20px;
+}
+
+.footer-con {
+  margin-bottom: 9px;
+}
+
+.footer-con:last-child {
+  margin-bottom: 0;
 }
 
 .footer-address .footer-contact:hover,
@@ -292,6 +316,7 @@ body {
 }
 
 .portfolio-border {
+  padding: 20px 24px;
   border: 1px solid var(--portfolio-border-color);
   border-top: none;
 }
@@ -303,16 +328,12 @@ body {
   line-height: 2;
   margin-top: 0px;
   margin-bottom: 4px;
-  margin-left: 24px;
-  padding-top: 20px;
 }
 
 .portfolio-text {
   font-size: 16px;
   line-height: 2;
   margin-top: 0px;
-  margin-bottom: 20px;
-  margin-left: 24px;
 }
 /* КНОПКИ */
 .btn {
@@ -340,16 +361,14 @@ body {
   justify-content: center;
 }
 
-.button-nav .btn-list + .btn-list{
+.button-nav .btn-list + .btn-list {
   margin-left: 8px;
 }
-
 
 .btn-portfolio {
   padding: 6px 22px;
   border: 0px;
   border-radius: 4px;
-  
 
   color: var(--tittle-color);
   background-color: var(--team-bgr-color);
@@ -360,8 +379,6 @@ body {
   line-height: 1.6;
   text-align: center;
 }
-
-
 
 .button-nav .btn-portfolio:hover,
 .button-nav .btn-portfolio:focus {
